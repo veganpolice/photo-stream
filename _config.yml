@@ -1,3 +1,37 @@
+Skip to content
+⚡️ 206ms 🐢  drop-codespace-limit 🦴 🐈 github/blob 
+✨ Feedback Switch to  Rails 7.0.0.alpha2.826f947 | Ruby 3.0.3
+maxvoltar
+/ photo-stream
+Search or jump to…
+@veganpolice
+This repository has been archived by the owner. It is now read-only.
+maxvoltar
+/
+photo-stream
+Public archive
+28
+1.8k
+306
+Code
+Issues
+22
+Pull requests
+4
+Actions
+Projects
+Wiki
+Security
+Insights
+photo-stream/_config.yml
+@maxvoltar
+maxvoltar This should already solve part of the errors
+Latest commit b1905e1 on Mar 10, 2020
+ History
+ 2 contributors
+@maxvoltar@benubois
+77 lines (73 sloc)  2.41 KB
+   
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -18,19 +52,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: aaronphoto
+title: maxvoltar.photo
 email: tim@maxvoltar.be
 author:
-  name: Aaron Rosenberg
+  name: Tim Van Damme
   email: tim@maxvoltar.be #optional
-  website: http://www.moutnainlife.com
+  website: https://maxvoltar.com
 description: >- # this means to ignore newlines until "baseurl:"
   @maxvoltar's minimalistic, self-hosted photo stream.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://gifted-saha-2ffbe2.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: aaronrosenberg
-github_username: veganpolice
-instagram_username: hottubeveryday
+url: "https://maxvoltar.photo/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: maxvoltar
+github_username: maxvoltar
+instagram_username: maxvoltar
 
 # Build settings
 plugins:
@@ -38,19 +72,19 @@ plugins:
 
 image_processing:
   large:
-    source: photos
+    source: photos/original
     destination: photos/large
     resize_to_limit: [2048, 2048]
     saver:
       strip: true
   thumbnail:
-    source: photos
+    source: photos/original
     destination: photos/thumbnail
     resize_to_limit: [640, 640]
     saver:
       strip: true
   tint:
-    source: photos
+    source: photos/original
     destination: photos/tint
     resize_to_fill: [1,1]
     saver:
@@ -75,3 +109,16 @@ image_processing:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
