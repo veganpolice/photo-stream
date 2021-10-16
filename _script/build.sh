@@ -16,6 +16,9 @@ command -v rsync >/dev/null 2>&1 || { echo >&2 "I require rsync but it's not ins
 
 echo 'Now building your site ... this can take a while.'
 
+SYNCSERVER=ftp.beckhoff.com
+SYNCFOLDER=document/maps
+
 bundle exec jekyll build > /dev/null
 
 echo 'Ready.'
